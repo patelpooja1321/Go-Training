@@ -1,3 +1,3 @@
-# Go-Training
+# -Training
 Hello
 Word

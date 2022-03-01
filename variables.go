@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var msg = "Good Morning!"
+var msg = "od Morning!"
 
 const Loginsession = true //Public data type
 
