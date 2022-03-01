@@ -10,5 +10,5 @@ func main() {
 	var name string
 	fmt.Scanln(&name)
 	rand.Seed(20)
-	fmt.Println("random number is %d", rand.Intn(10))
+	fmt.Println("random number is", rand.Intn(10))
 }
