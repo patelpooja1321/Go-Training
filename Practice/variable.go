@@ -47,5 +47,4 @@ func main() {
 
 	fmt.Println(Loginsession)
 	fmt.Printf("Variable Loginsession data type is %T \n", Loginsession)
-
 }
