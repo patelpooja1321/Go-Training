@@ -16,13 +16,29 @@ func input(x []int, err error) []int {
 	}
 	return input(x, err)
 }
+
 func main() {
-	fmt.Println("Welcome to sope factory")
-	var q int
-	fmt.Println("Please, Enter the amount of soup that you want to supply:")
-	fmt.Scanln(&q)
-	fmt.Println("Enter the soap size")
+	fmt.Println("Welcome to soap factory")
+	fmt.Println("Enter the ammount of soup that you want to supply")
+	var quantity int
+	fmt.Scanln(&quantity)
+	fmt.Println("Enter the soap sizes")
 	x := input([]int{}, nil)
-	fmt.Println("Input:", x)
 	sort.Ints(x)
+
+	var slice = []int{}
+
+	for index, _ := range x {
+		smallnumber := x[index]
+		totalquantity := quantity / smallnumber
+		fmt.Printf("you can make %v soaps of %v Oz OR \n", totalquantity, smallnumber)
+
+		slice = append(slice, totalquantity)
+		sort.Ints(slice)
+
+		index++
+
+	}
+	fmt.Println("the smallest number of soaps that are made with the ammount you added are", slice[0])
+
 }
