@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Find Duplicate values from the Array")
+	fmt.Println("Assignment 2 : Find Duplicate values from the Array")
 	var arr1 []int
 	var i, count int
 	arr := []int{2, 3, 4, 5, 6, 6, 7, 7, 8, 8, 2, 4}
