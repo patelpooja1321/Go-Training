@@ -16,7 +16,7 @@ func main() {
 	fmt.Scanln(&name)
 	fmt.Print("Enter Account Number:")
 	fmt.Scanln(&account_number)
-	fmt.Print("For add Money in your Account please press: 1 and for withdraw money enter: 2 ")
+	fmt.Print("For add Money in your Account please press: 1, for withdraw money enter: 2 and for Exit: 0= ")
 	fmt.Scan(&choice)
 	defer fmt.Println("last balnce is:", total_balance)
 
@@ -27,7 +27,7 @@ func main() {
 			fmt.Scan(&add_money)
 			total_balance = total_balance + add_money
 			fmt.Println("Current balance is:", total_balance)
-			fmt.Print("For add Money in your Account please press: 1 and for withdraw money enter: 2 ")
+			fmt.Print("For add Money in your Account please press: 1, for withdraw money enter: 2 and for Exit: 0= ")
 			fmt.Scan(&choice)
 		case 2:
 			fmt.Println("Please Enter Amount for Withdraw:")
@@ -38,14 +38,14 @@ func main() {
 				defer func() {
 					if r := recover(); r != nil {
 						fmt.Println("Balance is low", r)
-						fmt.Print("For add Money in your Account please press: 1 and for withdraw money enter: 2 ")
+						fmt.Print("For add Money in your Account please press: 1, for withdraw money enter: 2 and for Exit: 0= ")
 						fmt.Scan(&choice)
 					}
 				}()
 				panic("Balance is 0, Plase diposit money in next 15 days")
 
 			} else {
-				fmt.Print("For add Money in your Account please press: 1 and for withdraw money enter: 2 ")
+				fmt.Print("For add Money in your Account please press: 1, for withdraw money enter: 2 and for Exit: 0= ")
 				fmt.Scan(&choice)
 			}
 		default:
