@@ -1,11 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-var arr1 = []int{2, 4, 3}
-var arr2 = []int{5, 6, 4}
+var arr1 = []int{2, 4, 3, 5}
+var arr2 = []int{5, 7, 4, 6}
 var sum []int
-var count int
 var c int
 
 func main() {
@@ -15,16 +16,18 @@ func main() {
 	l := len(arr1) - 1
 	for i := l; i >= 0; i-- {
 		sum1 := arr1[i] + arr2[i]
-
 		if c == 1 {
 			sum1 = sum1 + 1
 			sum = append(sum, sum1)
 			c = 0
 		} else {
-			c1 := sum1 % 10
-			sum = append(sum, c1)
-			c = sum1 / 10
+			c = sum1 % 10
+			sum = append(sum, c)
 		}
+
+	}
+	l1 := len(sum)
+	for i := 0; i < count; i++ {
 
 	}
 	fmt.Println(sum)
