@@ -27,8 +27,8 @@ func main() {
 
 	}
 	l1 := len(sum)
-	for i := 0; i < count; i++ {
-
+	for i := l1; i > 0; i++ {
+		//fmt.Println(sum)
 	}
-	fmt.Println(sum)
+
 }

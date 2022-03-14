@@ -9,7 +9,9 @@ type circle struct {
 
 func main() {
 	fmt.Println("Find Area of Circle:")
-	c := circle{13.4, 8}
+	c := circle{}
+	c.Pi = 13.4
+	c.r = 8
 	Area := c.Pi * float32(c.r)
 	fmt.Println("Circle Area is:", Area)
 
