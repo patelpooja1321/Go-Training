@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"method_test/prac1"
+)
 
 type person_details struct {
 	Name   string
@@ -14,6 +17,7 @@ func main() {
 	fmt.Println("Students Details:", std)
 	std.Student()
 	fmt.Println("Students Details:", std)
+	prac1.Add()
 
 }
 
